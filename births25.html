@@ -1,0 +1,644 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Births, TFR per Raion 2025</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <style>
+      #map {
+        height: 100vh;
+      }
+
+      .legend {
+        background: white;
+        padding: 10px;
+        line-height: 1.5;
+        font-family: sans-serif;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        min-width: 220px;
+      }
+
+      .legend label {
+        display: block;
+        cursor: pointer;
+      }
+
+      .legend .slider-labels {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      .range-slider {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        margin: 20px 0;
+      }
+
+      .range-slider-track {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: #ddd;
+        border-radius: 2px;
+        transform: translateY(-50%);
+      }
+
+      .range-slider-fill {
+        position: absolute;
+        top: 50%;
+        height: 4px;
+        background: #4caf50;
+        border-radius: 2px;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+
+      .range-slider-thumb {
+        position: absolute;
+        top: 50%;
+        width: 18px;
+        height: 18px;
+        background: white;
+        border: 2px solid #4caf50;
+        border-radius: 50%;
+        cursor: grab;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .range-slider-thumb:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .range-slider-thumb.active {
+        cursor: grabbing;
+      }
+
+      .range-slider-ticks {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        font-size: 11px;
+        pointer-events: none;
+      }
+
+      .range-slider-tick {
+        flex: 1;
+        text-align: center;
+      }
+
+      .table-panel {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        bottom: 20px;
+        width: 450px;
+        background: white;
+        box-shadow: -2px 0 15px rgba(0, 0, 0, 0.15);
+        z-index: 500;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .table-panel.open {
+        transform: translateX(0);
+      }
+
+      .table-panel-header {
+        padding: 18px 16px;
+        background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .table-panel-header h3 {
+        margin: 0;
+        font-size: 18px;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      .close-panel-btn {
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        opacity: 0.8;
+        transition: opacity 0.2s ease;
+      }
+
+      .close-panel-btn:hover {
+        opacity: 1;
+      }
+
+      .table-panel-content {
+        flex: 1;
+        overflow-y: auto;
+        padding: 10px;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 11px;
+      }
+
+      .data-table thead {
+        background: #f5f5f5;
+      }
+
+      .data-table th {
+        padding: 8px 4px;
+        text-align: left;
+        border-bottom: 2px solid #ddd;
+        cursor: pointer;
+        user-select: none;
+        font-weight: bold;
+      }
+
+      .data-table th:hover {
+        background: #e8e8e8;
+      }
+
+      .data-table th.sortable::after {
+        content: " ⇅";
+        font-size: 10px;
+      }
+
+      .data-table th.sorted-asc::after {
+        content: " ↑";
+        color: #4caf50;
+      }
+
+      .data-table th.sorted-desc::after {
+        content: " ↓";
+        color: #4caf50;
+      }
+
+      .data-table td {
+        padding: 6px 4px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .data-table tbody tr:hover {
+        background: #f9f9f9;
+        font-weight: 500;
+      }
+
+      .data-table tbody tr {
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .toggle-panel-btn {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        background: white;
+        border: 2px solid #4caf50;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        z-index: 400;
+        font-weight: bold;
+        color: #4caf50;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .toggle-panel-btn:hover {
+        background: #4caf50;
+        color: white;
+      }
+
+      .toggle-panel-btn.hidden {
+        display: none;
+      }
+
+      .legend.hidden {
+        display: none !important;
+      }
+
+      a[href] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <button class="toggle-panel-btn" id="toggle-panel-btn">Data</button>
+
+    <div class="table-panel" id="table-panel">
+      <div class="table-panel-header">
+        <h3>Districts Births 2025</h3>
+        <button class="close-panel-btn" id="close-panel-btn">&times;</button>
+      </div>
+      <div class="table-panel-content">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort="name">Raion</th>
+              <th class="sortable" data-sort="births">Births</th>
+              <th class="sortable" data-sort="women">Women</th>
+              <th class="sortable" data-sort="tfr">TFR</th>
+              <th class="sortable" data-sort="population">Population</th>
+              <th class="sortable" data-sort="cbr">CBR</th>
+            </tr>
+          </thead>
+          <tbody id="data-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      (async () => {
+        const map = L.map("map").setView([49, 32], 6);
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
+          map,
+        );
+
+        const data = await fetch("./births25.json").then((res) => res.json());
+
+        let currentMin = 0;
+        let currentMax = Infinity;
+
+        function updateLegendStats() {
+          const filtered = data.filter(
+            (d) => d.births >= currentMin && d.births <= currentMax,
+          );
+          const numRaions = filtered.length;
+          const totalBirths = filtered.reduce((sum, d) => sum + d.births, 0);
+          const totalWomen = filtered.reduce((sum, d) => sum + d.women, 0);
+          const totalPopulation = filtered.reduce(
+            (sum, d) => sum + (d.population || 0),
+            0,
+          );
+          const avgCbr = (totalBirths / totalPopulation) * 1000;
+          const avgTfr = (totalBirths / totalWomen) * 35;
+          document.getElementById("legend-stats").innerHTML =
+            `Districts: ${numRaions}<br/>births: ${totalBirths}<br/>fertile women: ${totalWomen}<br/>population: ${totalPopulation.toLocaleString()}<br/>CBR: ${avgCbr.toFixed(2)}<br/>TFR: ${Math.round(avgTfr * 100) / 100}`;
+        }
+
+        const maxBirths = Math.max(...data.map((d) => d.births));
+
+        function getColor(tfr) {
+          // Color based on TFR: <0.88 (red gradient), >=0.88 (yellow to green gradient)
+          if (tfr < 0.88) {
+            // Red gradient for <0.88 (darker red -> lighter red, as tfr increases)
+            const ratio = (0.88 - tfr) / 0.88; // 1 to 0 as tfr goes from 0 to 0.88
+            const r = 255;
+            const g = Math.floor(100 - 100 * ratio);
+            const b = Math.floor(80 - 80 * ratio);
+            return `rgb(${r}, ${g}, ${b})`;
+          } else {
+            // Yellow to green gradient for >=0.88
+            const ratio = Math.min((tfr - 0.88) / 0.72, 1); // 0 to 1 for 0.88-1.6
+            const r = Math.floor(255 - 255 * ratio);
+            const g = 255;
+            const b = 0;
+            return `rgb(${r}, ${g}, ${b})`;
+          }
+        }
+
+        let markers = [];
+        let layersByName = {}; // Store layers by raion name for quick lookup
+
+        function render() {
+          // remove old layers
+          markers.forEach((m) => map.removeLayer(m));
+          markers = [];
+          layersByName = {};
+
+          data.forEach((d) => {
+            if (
+              d.births >= currentMin &&
+              d.births <= currentMax &&
+              d.geometry
+            ) {
+              // Convert to GeoJSON Feature format
+              const feature = {
+                type: "Feature",
+                properties: {
+                  name: d.name,
+                  oblast: d.oblast,
+                  births: d.births,
+                  women: d.women,
+                  tfr: d.tfr,
+                  population: d.population,
+                  cbr: d.cbr,
+                },
+                geometry: d.geometry,
+              };
+
+              const geoJsonLayer = L.geoJSON(feature, {
+                style: {
+                  fillColor: getColor(d.tfr),
+                  color: "#000",
+                  weight: 1,
+                  opacity: 0.7,
+                  fillOpacity: 0.7,
+                },
+                onEachFeature: (feature, layer) => {
+                  const props = feature.properties;
+                  layer.bindPopup(
+                    `<b>${props.name}</b><br/>${props.oblast}<br/>Births: ${props.births}<br/>Fertile Women: ${props.women}<br/>TFR: ${props.tfr}<br/>Population: ${(props.population || 0).toLocaleString()}<br/>CBR: ${(props.cbr || 0).toFixed(2)}`,
+                  );
+                },
+              }).addTo(map);
+
+              markers.push(geoJsonLayer);
+              layersByName[d.name] = geoJsonLayer; // Store by name for table lookup
+            }
+          });
+        }
+
+        // legend
+        const legend = L.control({ position: "bottomright" });
+
+        legend.onAdd = function () {
+          const div = L.DomUtil.create("div", "legend");
+          const statsP = L.DomUtil.create("p", "", div);
+          statsP.id = "legend-stats";
+
+          const colorLegend = L.DomUtil.create("p", "", div);
+          colorLegend.innerHTML =
+            "<b>TFR Scale:</b><br/>" +
+            "<span style='color: #ff6464;'>●</span> &lt;0.88<br/>" +
+            "<span style='color: #00ff00;'>●</span> ≥0.88";
+
+          const options = [0, 1000, 2000, 3000, 4000, 5000, "∞"];
+
+          const sliderContainer = L.DomUtil.create("div", "range-slider", div);
+          const track = L.DomUtil.create(
+            "div",
+            "range-slider-track",
+            sliderContainer,
+          );
+          const fill = L.DomUtil.create(
+            "div",
+            "range-slider-fill",
+            sliderContainer,
+          );
+          fill.id = "range-fill";
+
+          const minThumb = L.DomUtil.create(
+            "div",
+            "range-slider-thumb",
+            sliderContainer,
+          );
+          minThumb.id = "min-thumb";
+          const maxThumb = L.DomUtil.create(
+            "div",
+            "range-slider-thumb",
+            sliderContainer,
+          );
+          maxThumb.id = "max-thumb";
+
+          const ticksDiv = L.DomUtil.create(
+            "div",
+            "range-slider-ticks",
+            sliderContainer,
+          );
+          options.forEach((opt) => {
+            const tickSpan = L.DomUtil.create(
+              "div",
+              "range-slider-tick",
+              ticksDiv,
+            );
+            tickSpan.textContent = opt;
+          });
+
+          return div;
+        };
+
+        legend.addTo(map);
+
+        updateLegendStats();
+
+        // Range slider logic
+        const sliderOptions = [0, 1000, 2000, 3000, 4000, 5000, Infinity];
+        let minPos = 0;
+        let maxPos = 6;
+        let activeThumb = null;
+
+        function snapToTick(position) {
+          const closest = Math.round(position);
+          return Math.max(0, Math.min(6, closest));
+        }
+
+        function updateSlider() {
+          const minThumb = document.getElementById("min-thumb");
+          const maxThumb = document.getElementById("max-thumb");
+          const fill = document.getElementById("range-fill");
+          const track = document.querySelector(".range-slider-track");
+          const sliderWidth = track.offsetWidth;
+
+          const minPercent = (minPos / 6) * 100;
+          const maxPercent = (maxPos / 6) * 100;
+
+          minThumb.style.left = minPercent + "%";
+          maxThumb.style.left = maxPercent + "%";
+          fill.style.left = minPercent + "%";
+          fill.style.right = 100 - maxPercent + "%";
+
+          currentMin =
+            sliderOptions[minPos] === Infinity
+              ? Infinity
+              : sliderOptions[minPos];
+          currentMax =
+            sliderOptions[maxPos] === Infinity
+              ? Infinity
+              : sliderOptions[maxPos];
+
+          render();
+          updateLegendStats();
+          // Update table to show only filtered raions
+          const filteredByRange = data.filter(
+            (d) => d.births >= currentMin && d.births <= currentMax,
+          );
+          populateTable(filteredByRange);
+        }
+
+        function handleMouseDown(e) {
+          if (e.target.id === "min-thumb" || e.target.id === "max-thumb") {
+            activeThumb = e.target.id;
+            e.target.classList.add("active");
+          }
+        }
+
+        function handleMouseMove(e) {
+          if (!activeThumb) return;
+
+          const track = document.querySelector(".range-slider-track");
+          const rect = track.getBoundingClientRect();
+          const pos = ((e.clientX - rect.left) / rect.width) * 7;
+          const snappedPos = snapToTick(pos);
+
+          if (activeThumb === "min-thumb") {
+            if (snappedPos <= maxPos) {
+              minPos = snappedPos;
+            }
+          } else if (activeThumb === "max-thumb") {
+            if (snappedPos >= minPos) {
+              maxPos = snappedPos;
+            }
+          }
+
+          updateSlider();
+        }
+
+        function handleMouseUp() {
+          if (activeThumb) {
+            document.getElementById(activeThumb).classList.remove("active");
+            activeThumb = null;
+          }
+        }
+
+        document.addEventListener("mousedown", handleMouseDown);
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
+
+        // Table Panel Logic - initialize before updateSlider() is called
+        let currentSortField = "name";
+        let sortAscending = true;
+
+        updateSlider();
+
+        // initial draw
+        render();
+
+        function populateTable(dataToDisplay) {
+          const tbody = document.getElementById("data-table-body");
+          tbody.innerHTML = "";
+
+          const sortedData = [...dataToDisplay].sort((a, b) => {
+            let aVal = a[currentSortField];
+            let bVal = b[currentSortField];
+
+            // Handle numeric sorting
+            if (typeof aVal === "number" && typeof bVal === "number") {
+              return sortAscending ? aVal - bVal : bVal - aVal;
+            }
+
+            // Handle string sorting
+            aVal = String(aVal).toLowerCase();
+            bVal = String(bVal).toLowerCase();
+            if (sortAscending) {
+              return aVal.localeCompare(bVal);
+            } else {
+              return bVal.localeCompare(aVal);
+            }
+          });
+
+          sortedData.forEach((d) => {
+            const row = document.createElement("tr");
+            row.dataset.raionName = d.name;
+            row.innerHTML = `
+              <td>${d.name}</td>
+              <td>${d.births}</td>
+              <td>${d.women}</td>
+              <td>${d.tfr.toFixed(2)}</td>
+              <td>${(d.population || 0).toLocaleString()}</td>
+              <td>${(d.cbr || 0).toFixed(2)}</td>
+            `;
+
+            // Add click handler to zoom and select raion
+            row.addEventListener("click", () => {
+              const raionName = row.dataset.raionName;
+              const layer = layersByName[raionName];
+
+              if (layer) {
+                map.fitBounds(layer.getBounds(), { padding: [50, 50] });
+                layer.eachLayer((l) => {
+                  if (l.feature.properties.name === raionName) {
+                    l.openPopup();
+                  }
+                });
+              }
+            });
+
+            tbody.appendChild(row);
+          });
+        }
+
+        // Panel toggle
+        const toggleBtn = document.getElementById("toggle-panel-btn");
+        const closeBtn = document.getElementById("close-panel-btn");
+        const tablePanel = document.getElementById("table-panel");
+
+        toggleBtn.addEventListener("click", () => {
+          tablePanel.classList.add("open");
+          const legendElement = document.querySelector(".legend");
+          if (legendElement) legendElement.classList.add("hidden");
+        });
+
+        closeBtn.addEventListener("click", () => {
+          tablePanel.classList.remove("open");
+          const legendElement = document.querySelector(".legend");
+          if (legendElement) legendElement.classList.remove("hidden");
+        });
+
+        // Sort headers
+        const sortHeaders = document.querySelectorAll("[data-sort]");
+        sortHeaders.forEach((header) => {
+          header.addEventListener("click", () => {
+            const sortField = header.dataset.sort;
+            if (currentSortField === sortField) {
+              sortAscending = !sortAscending;
+            } else {
+              currentSortField = sortField;
+              sortAscending = true;
+            }
+
+            // Update header classes
+            sortHeaders.forEach((h) => {
+              h.classList.remove("sorted-asc", "sorted-desc");
+            });
+            if (sortAscending) {
+              header.classList.add("sorted-asc");
+            } else {
+              header.classList.add("sorted-desc");
+            }
+
+            // Keep filtered by slider range
+            const filteredByRange = data.filter(
+              (d) => d.births >= currentMin && d.births <= currentMax,
+            );
+            populateTable(filteredByRange);
+          });
+        });
+
+        // Initial table population
+        populateTable(data);
+      })();
+    </script>
+  </body>
+</html>
