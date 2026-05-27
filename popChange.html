@@ -289,7 +289,7 @@
           map,
         );
 
-        const data = await fetch("./populationChange.json").then((res) =>
+        const data = await fetch("./populationChange.json",  { cache: "force-cache" }).then((res) =>
           res.json(),
         );
 
