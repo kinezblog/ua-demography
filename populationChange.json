@@ -1,0 +1,737 @@
+[
+  {
+    "name": "Вінницький",
+    "oblast": "Вінницька",
+    "population": 634118,
+    "population22": 647966,
+    "populationChange": -2.14
+  },
+  {
+    "name": "Гайсинський",
+    "oblast": "Вінницька",
+    "population": 188618,
+    "population22": 232647,
+    "populationChange": -18.93
+  },
+  {
+    "name": "Жмеринський",
+    "oblast": "Вінницька",
+    "population": 139914,
+    "population22": 158913,
+    "populationChange": -11.96
+  },
+  {
+    "name": "Могилів-Подільський",
+    "oblast": "Вінницька",
+    "population": 108766,
+    "population22": 139828,
+    "populationChange": -22.21
+  },
+  {
+    "name": "Тульчинський",
+    "oblast": "Вінницька",
+    "population": 124258,
+    "population22": 149429,
+    "populationChange": -16.84
+  },
+  {
+    "name": "Хмільницький",
+    "oblast": "Вінницька",
+    "population": 158435,
+    "population22": 180732,
+    "populationChange": -12.34
+  },
+  {
+    "name": "Володимирський",
+    "oblast": "Волинська",
+    "population": 140177,
+    "population22": 169231,
+    "populationChange": -17.17
+  },
+  {
+    "name": "Камінь-Каширський",
+    "oblast": "Волинська",
+    "population": 110240,
+    "population22": 130382,
+    "populationChange": -15.45
+  },
+  {
+    "name": "Ковельський",
+    "oblast": "Волинська",
+    "population": 223152,
+    "population22": 266304,
+    "populationChange": -16.2
+  },
+  {
+    "name": "Луцький",
+    "oblast": "Волинська",
+    "population": 424086,
+    "population22": 455439,
+    "populationChange": -6.88
+  },
+  {
+    "name": "Дніпровський",
+    "oblast": "Дніпропетровська",
+    "population": 1099710,
+    "population22": 1145065,
+    "populationChange": -3.96
+  },
+  {
+    "name": "Кам'янський",
+    "oblast": "Дніпропетровська",
+    "population": 347551,
+    "population22": 423443,
+    "populationChange": -17.92
+  },
+  {
+    "name": "Криворізький",
+    "oblast": "Дніпропетровська",
+    "population": 605311,
+    "population22": 743934,
+    "populationChange": -18.63
+  },
+  {
+    "name": "Нікопольський",
+    "oblast": "Дніпропетровська",
+    "population": 145196,
+    "population22": 250746,
+    "populationChange": -42.09
+  },
+  {
+    "name": "Павлоградський",
+    "oblast": "Дніпропетровська",
+    "population": 146414,
+    "population22": 166797,
+    "populationChange": -12.22
+  },
+  {
+    "name": "Самарівський",
+    "oblast": "Дніпропетровська",
+    "population": 135430,
+    "population22": 167526,
+    "populationChange": -19.16
+  },
+  {
+    "name": "Синельниківський",
+    "oblast": "Дніпропетровська",
+    "population": 160176,
+    "population22": 198974,
+    "populationChange": -19.5
+  },
+  {
+    "name": "Краматорський",
+    "oblast": "Донецька",
+    "population": 207885,
+    "population22": 543371,
+    "populationChange": -61.74
+  },
+  {
+    "name": "Бердичівський",
+    "oblast": "Житомирська",
+    "population": 137735,
+    "population22": 156419,
+    "populationChange": -11.94
+  },
+  {
+    "name": "Житомирський",
+    "oblast": "Житомирська",
+    "population": 540381,
+    "population22": 606433,
+    "populationChange": -10.89
+  },
+  {
+    "name": "Звягельський",
+    "oblast": "Житомирська",
+    "population": 134061,
+    "population22": 164972,
+    "populationChange": -18.74
+  },
+  {
+    "name": "Коростенський",
+    "oblast": "Житомирська",
+    "population": 216548,
+    "population22": 251208,
+    "populationChange": -13.8
+  },
+  {
+    "name": "Берегівський",
+    "oblast": "Закарпатська",
+    "population": 167663,
+    "population22": 206696,
+    "populationChange": -18.88
+  },
+  {
+    "name": "Мукачівський",
+    "oblast": "Закарпатська",
+    "population": 222291,
+    "population22": 251145,
+    "populationChange": -11.49
+  },
+  {
+    "name": "Рахівський",
+    "oblast": "Закарпатська",
+    "population": 66488,
+    "population22": 82034,
+    "populationChange": -18.95
+  },
+  {
+    "name": "Тячівський",
+    "oblast": "Закарпатська",
+    "population": 161240,
+    "population22": 183756,
+    "populationChange": -12.25
+  },
+  {
+    "name": "Ужгородський",
+    "oblast": "Закарпатська",
+    "population": 262052,
+    "population22": 255000,
+    "populationChange": 2.77
+  },
+  {
+    "name": "Хустський",
+    "oblast": "Закарпатська",
+    "population": 240300,
+    "population22": 265845,
+    "populationChange": -9.61
+  },
+  {
+    "name": "Запорізький",
+    "oblast": "Запорізька",
+    "population": 724985,
+    "population22": 840866,
+    "populationChange": -13.78
+  },
+  {
+    "name": "Верховинський",
+    "oblast": "Івано-Франківська",
+    "population": 28689,
+    "population22": 30195,
+    "populationChange": -4.99
+  },
+  {
+    "name": "Івано-Франківський",
+    "oblast": "Івано-Франківська",
+    "population": 515183,
+    "population22": 556104,
+    "populationChange": -7.36
+  },
+  {
+    "name": "Калуський",
+    "oblast": "Івано-Франківська",
+    "population": 244548,
+    "population22": 279867,
+    "populationChange": -12.62
+  },
+  {
+    "name": "Коломийський",
+    "oblast": "Івано-Франківська",
+    "population": 241965,
+    "population22": 272628,
+    "populationChange": -11.25
+  },
+  {
+    "name": "Косівський",
+    "oblast": "Івано-Франківська",
+    "population": 71977,
+    "population22": 83700,
+    "populationChange": -14.01
+  },
+  {
+    "name": "Надвірнянський",
+    "oblast": "Івано-Франківська",
+    "population": 111028,
+    "population22": 129328,
+    "populationChange": -14.15
+  },
+  {
+    "name": "Білоцерківський",
+    "oblast": "Київська",
+    "population": 373487,
+    "population22": 431172,
+    "populationChange": -13.38
+  },
+  {
+    "name": "Бориспільський",
+    "oblast": "Київська",
+    "population": 223891,
+    "population22": 203154,
+    "populationChange": 10.21
+  },
+  {
+    "name": "Броварський",
+    "oblast": "Київська",
+    "population": 230467,
+    "population22": 241777,
+    "populationChange": -4.68
+  },
+  {
+    "name": "Бучанський",
+    "oblast": "Київська",
+    "population": 476181,
+    "population22": 375536,
+    "populationChange": 26.8
+  },
+  {
+    "name": "Вишгородський",
+    "oblast": "Київська",
+    "population": 117476,
+    "population22": 132136,
+    "populationChange": -11.09
+  },
+  {
+    "name": "Обухівський",
+    "oblast": "Київська",
+    "population": 230391,
+    "population22": 227209,
+    "populationChange": 1.4
+  },
+  {
+    "name": "Фастівський",
+    "oblast": "Київська",
+    "population": 179118,
+    "population22": 184095,
+    "populationChange": -2.7
+  },
+  {
+    "name": "Голованівський",
+    "oblast": "Кіровоградська",
+    "population": 92025,
+    "population22": 118803,
+    "populationChange": -22.54
+  },
+  {
+    "name": "Кропивницький",
+    "oblast": "Кіровоградська",
+    "population": 375653,
+    "population22": 429585,
+    "populationChange": -12.55
+  },
+  {
+    "name": "Новоукраїнський",
+    "oblast": "Кіровоградська",
+    "population": 105721,
+    "population22": 135842,
+    "populationChange": -22.17
+  },
+  {
+    "name": "Олександрійський",
+    "oblast": "Кіровоградська",
+    "population": 176549,
+    "population22": 219482,
+    "populationChange": -19.56
+  },
+  {
+    "name": "Дрогобицький",
+    "oblast": "Львівська",
+    "population": 202564,
+    "population22": 232947,
+    "populationChange": -13.04
+  },
+  {
+    "name": "Золочівський",
+    "oblast": "Львівська",
+    "population": 134855,
+    "population22": 158943,
+    "populationChange": -15.16
+  },
+  {
+    "name": "Львівський",
+    "oblast": "Львівська",
+    "population": 1117457,
+    "population22": 1141119,
+    "populationChange": -2.07
+  },
+  {
+    "name": "Самбірський",
+    "oblast": "Львівська",
+    "population": 176591,
+    "population22": 221896,
+    "populationChange": -20.42
+  },
+  {
+    "name": "Стрийський",
+    "oblast": "Львівська",
+    "population": 274626,
+    "population22": 319464,
+    "populationChange": -14.04
+  },
+  {
+    "name": "Шептицький",
+    "oblast": "Львівська",
+    "population": 183897,
+    "population22": 226102,
+    "populationChange": -18.67
+  },
+  {
+    "name": "Яворівський",
+    "oblast": "Львівська",
+    "population": 155825,
+    "population22": 177662,
+    "populationChange": -12.29
+  },
+  {
+    "name": "КИЇВ",
+    "oblast": "КИЇВ",
+    "population": 2436476,
+    "population22": 2952301,
+    "populationChange": -17.47
+  },
+  {
+    "name": "Баштанський",
+    "oblast": "Миколаївська",
+    "population": 94759,
+    "population22": 134234,
+    "populationChange": -29.41
+  },
+  {
+    "name": "Вознесенський",
+    "oblast": "Миколаївська",
+    "population": 141446,
+    "population22": 175542,
+    "populationChange": -19.42
+  },
+  {
+    "name": "Миколаївський",
+    "oblast": "Миколаївська",
+    "population": 470616,
+    "population22": 636832,
+    "populationChange": -26.1
+  },
+  {
+    "name": "Первомайський",
+    "oblast": "Миколаївська",
+    "population": 120298,
+    "population22": 145213,
+    "populationChange": -17.16
+  },
+  {
+    "name": "Березівський",
+    "oblast": "Одеська",
+    "population": 70711,
+    "population22": 104969,
+    "populationChange": -32.64
+  },
+  {
+    "name": "Білгород-Дністровський",
+    "oblast": "Одеська",
+    "population": 157474,
+    "population22": 196618,
+    "populationChange": -19.91
+  },
+  {
+    "name": "Болградський",
+    "oblast": "Одеська",
+    "population": 98916,
+    "population22": 144377,
+    "populationChange": -31.49
+  },
+  {
+    "name": "Ізмаїльський",
+    "oblast": "Одеська",
+    "population": 167832,
+    "population22": 204745,
+    "populationChange": -18.03
+  },
+  {
+    "name": "Одеський",
+    "oblast": "Одеська",
+    "population": 1257040,
+    "population22": 1378490,
+    "populationChange": -8.81
+  },
+  {
+    "name": "Подільський",
+    "oblast": "Одеська",
+    "population": 161892,
+    "population22": 220786,
+    "populationChange": -26.67
+  },
+  {
+    "name": "Роздільнянський",
+    "oblast": "Одеська",
+    "population": 71242,
+    "population22": 101407,
+    "populationChange": -29.75
+  },
+  {
+    "name": "Кременчуцький",
+    "oblast": "Полтавська",
+    "population": 338086,
+    "population22": 387200,
+    "populationChange": -12.68
+  },
+  {
+    "name": "Лубенський",
+    "oblast": "Полтавська",
+    "population": 161580,
+    "population22": 184616,
+    "populationChange": -12.48
+  },
+  {
+    "name": "Миргородський",
+    "oblast": "Полтавська",
+    "population": 168244,
+    "population22": 198076,
+    "populationChange": -15.06
+  },
+  {
+    "name": "Полтавський",
+    "oblast": "Полтавська",
+    "population": 526650,
+    "population22": 582391,
+    "populationChange": -9.57
+  },
+  {
+    "name": "Вараський",
+    "oblast": "Рівненська",
+    "population": 122850,
+    "population22": 138118,
+    "populationChange": -11.05
+  },
+  {
+    "name": "Дубенський",
+    "oblast": "Рівненська",
+    "population": 144591,
+    "population22": 165911,
+    "populationChange": -12.85
+  },
+  {
+    "name": "Рівненський",
+    "oblast": "Рівненська",
+    "population": 590116,
+    "population22": 625543,
+    "populationChange": -5.66
+  },
+  {
+    "name": "Сарненський",
+    "oblast": "Рівненська",
+    "population": 193753,
+    "population22": 212212,
+    "populationChange": -8.7
+  },
+  {
+    "name": "Конотопський",
+    "oblast": "Сумська",
+    "population": 145502,
+    "population22": 194408,
+    "populationChange": -25.16
+  },
+  {
+    "name": "Охтирський",
+    "oblast": "Сумська",
+    "population": 90315,
+    "population22": 120107,
+    "populationChange": -24.8
+  },
+  {
+    "name": "Роменський",
+    "oblast": "Сумська",
+    "population": 96839,
+    "population22": 107509,
+    "populationChange": -9.92
+  },
+  {
+    "name": "Сумський",
+    "oblast": "Сумська",
+    "population": 367502,
+    "population22": 434316,
+    "populationChange": -15.38
+  },
+  {
+    "name": "Шосткинський",
+    "oblast": "Сумська",
+    "population": 125139,
+    "population22": 179432,
+    "populationChange": -30.26
+  },
+  {
+    "name": "Кременецький",
+    "oblast": "Тернопільська",
+    "population": 117667,
+    "population22": 140063,
+    "populationChange": -15.99
+  },
+  {
+    "name": "Тернопільський",
+    "oblast": "Тернопільська",
+    "population": 506864,
+    "population22": 559357,
+    "populationChange": -9.38
+  },
+  {
+    "name": "Чортківський",
+    "oblast": "Тернопільська",
+    "population": 260728,
+    "population22": 322293,
+    "populationChange": -19.1
+  },
+  {
+    "name": "Берестинський",
+    "oblast": "Харківська",
+    "population": 88861,
+    "population22": 103856,
+    "populationChange": -14.44
+  },
+  {
+    "name": "Богодухівський",
+    "oblast": "Харківська",
+    "population": 94574,
+    "population22": 122287,
+    "populationChange": -22.66
+  },
+  {
+    "name": "Ізюмський",
+    "oblast": "Харківська",
+    "population": 103772,
+    "population22": 172120,
+    "populationChange": -39.71
+  },
+  {
+    "name": "Куп'янський",
+    "oblast": "Харківська",
+    "population": 13618,
+    "population22": 130111,
+    "populationChange": -89.53
+  },
+  {
+    "name": "Лозівський",
+    "oblast": "Харківська",
+    "population": 116219,
+    "population22": 147361,
+    "populationChange": -21.13
+  },
+  {
+    "name": "Харківський",
+    "oblast": "Харківська",
+    "population": 1213379,
+    "population22": 1729049,
+    "populationChange": -29.82
+  },
+  {
+    "name": "Чугуївський",
+    "oblast": "Харківська",
+    "population": 136136,
+    "population22": 194177,
+    "populationChange": -29.89
+  },
+  {
+    "name": "Бериславський",
+    "oblast": "Херсонська",
+    "population": 43066,
+    "population22": 94103,
+    "populationChange": -54.24
+  },
+  {
+    "name": "Херсонський",
+    "oblast": "Херсонська",
+    "population": 77346,
+    "population22": 450233,
+    "populationChange": -82.82
+  },
+  {
+    "name": "Кам'янець-Подільський",
+    "oblast": "Хмельницька",
+    "population": 238259,
+    "population22": 279789,
+    "populationChange": -14.84
+  },
+  {
+    "name": "Хмельницький",
+    "oblast": "Хмельницька",
+    "population": 632532,
+    "population22": 672305,
+    "populationChange": -5.92
+  },
+  {
+    "name": "Шепетівський",
+    "oblast": "Хмельницька",
+    "population": 237213,
+    "population22": 276735,
+    "populationChange": -14.28
+  },
+  {
+    "name": "Звенигородський",
+    "oblast": "Черкаська",
+    "population": 154021,
+    "population22": 193804,
+    "populationChange": -20.53
+  },
+  {
+    "name": "Золотоніський",
+    "oblast": "Черкаська",
+    "population": 109446,
+    "population22": 135445,
+    "populationChange": -19.2
+  },
+  {
+    "name": "Уманський",
+    "oblast": "Черкаська",
+    "population": 210973,
+    "population22": 247847,
+    "populationChange": -14.88
+  },
+  {
+    "name": "Черкаський",
+    "oblast": "Черкаська",
+    "population": 527752,
+    "population22": 583648,
+    "populationChange": -9.58
+  },
+  {
+    "name": "Вижницький",
+    "oblast": "Чернівецька",
+    "population": 80706,
+    "population22": 89606,
+    "populationChange": -9.93
+  },
+  {
+    "name": "Дністровський",
+    "oblast": "Чернівецька",
+    "population": 122853,
+    "population22": 152208,
+    "populationChange": -19.29
+  },
+  {
+    "name": "Чернівецький",
+    "oblast": "Чернівецька",
+    "population": 592935,
+    "population22": 648643,
+    "populationChange": -8.59
+  },
+  {
+    "name": "Корюківський",
+    "oblast": "Чернігівська",
+    "population": 66280,
+    "population22": 86435,
+    "populationChange": -23.32
+  },
+  {
+    "name": "Ніжинський",
+    "oblast": "Чернігівська",
+    "population": 178556,
+    "population22": 215908,
+    "populationChange": -17.3
+  },
+  {
+    "name": "Новгород-Сіверський",
+    "oblast": "Чернігівська",
+    "population": 44109,
+    "population22": 62141,
+    "populationChange": -29.02
+  },
+  {
+    "name": "Прилуцький",
+    "oblast": "Чернігівська",
+    "population": 128117,
+    "population22": 149401,
+    "populationChange": -14.25
+  },
+  {
+    "name": "Чернігівський",
+    "oblast": "Чернігівська",
+    "population": 374147,
+    "population22": 445430,
+    "populationChange": -16
+  }
+]
