@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.js"></script>
 
     <style>
       #map {
@@ -289,9 +290,30 @@
           map,
         );
 
-        const data = await fetch("./populationChange.json",  { cache: "force-cache" }).then((res) =>
+        // Load optimized files: data (17.7KB) + TopoJSON geometry (9.7MB)
+        const dataArray = await fetch("./populationChange.json").then((res) =>
           res.json(),
         );
+        const topology = await fetch("./ukraine.topojson").then((res) =>
+          res.json(),
+        );
+
+        // Convert TopoJSON features back to GeoJSON with geometry
+        const topoFeatures = topojson.feature(
+          topology,
+          topology.objects.raions,
+        ).features;
+
+        // Merge data properties with geometries
+        const data = dataArray.map((dataItem) => {
+          const feature = topoFeatures.find(
+            (f) => f.properties.name === dataItem.name,
+          );
+          return {
+            ...dataItem,
+            geometry: feature?.geometry,
+          };
+        });
 
         let currentMin = -Infinity;
         let currentMax = Infinity;
