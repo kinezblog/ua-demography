@@ -1,0 +1,891 @@
+[
+  {
+    "name": "Бучанський",
+    "births2025": 4470,
+    "births2021": 3149,
+    "change_pct": 41.95,
+    "change_abs": 1321
+  },
+  {
+    "name": "Львівський",
+    "births2025": 8769,
+    "births2021": 9311,
+    "change_pct": -5.82,
+    "change_abs": -542
+  },
+  {
+    "name": "Броварський",
+    "births2025": 1475,
+    "births2021": 1626,
+    "change_pct": -9.29,
+    "change_abs": -151
+  },
+  {
+    "name": "Обухівський",
+    "births2025": 1413,
+    "births2021": 1561,
+    "change_pct": -9.48,
+    "change_abs": -148
+  },
+  {
+    "name": "Фастівський",
+    "births2025": 1093,
+    "births2021": 1215,
+    "change_pct": -10.04,
+    "change_abs": -122
+  },
+  {
+    "name": "Вишгородський",
+    "births2025": 694,
+    "births2021": 805,
+    "change_pct": -13.79,
+    "change_abs": -111
+  },
+  {
+    "name": "Бориспільський",
+    "births2025": 1261,
+    "births2021": 1515,
+    "change_pct": -16.77,
+    "change_abs": -254
+  },
+  {
+    "name": "Вінницький",
+    "births2025": 4047,
+    "births2021": 4875,
+    "change_pct": -16.98,
+    "change_abs": -828
+  },
+  {
+    "name": "Ужгородський",
+    "births2025": 2056,
+    "births2021": 2500,
+    "change_pct": -17.76,
+    "change_abs": -444
+  },
+  {
+    "name": "Івано-Франківський",
+    "births2025": 3429,
+    "births2021": 4192,
+    "change_pct": -18.2,
+    "change_abs": -763
+  },
+  {
+    "name": "Луцький",
+    "births2025": 3609,
+    "births2021": 4443,
+    "change_pct": -18.77,
+    "change_abs": -834
+  },
+  {
+    "name": "Рівненський",
+    "births2025": 4772,
+    "births2021": 5902,
+    "change_pct": -19.15,
+    "change_abs": -1130
+  },
+  {
+    "name": "Дрогобицький",
+    "births2025": 1210,
+    "births2021": 1513,
+    "change_pct": -20.03,
+    "change_abs": -303
+  },
+  {
+    "name": "Верховинський",
+    "births2025": 260,
+    "births2021": 328,
+    "change_pct": -20.73,
+    "change_abs": -68
+  },
+  {
+    "name": "Житомирський",
+    "births2025": 3452,
+    "births2021": 4473,
+    "change_pct": -22.83,
+    "change_abs": -1021
+  },
+  {
+    "name": "Вараський",
+    "births2025": 1217,
+    "births2021": 1587,
+    "change_pct": -23.31,
+    "change_abs": -370
+  },
+  {
+    "name": "Білоцерківський",
+    "births2025": 2116,
+    "births2021": 2761,
+    "change_pct": -23.36,
+    "change_abs": -645
+  },
+  {
+    "name": "Черкаський",
+    "births2025": 2554,
+    "births2021": 3387,
+    "change_pct": -24.59,
+    "change_abs": -833
+  },
+  {
+    "name": "Ковельський",
+    "births2025": 1962,
+    "births2021": 2630,
+    "change_pct": -25.4,
+    "change_abs": -668
+  },
+  {
+    "name": "Дніпровський",
+    "births2025": 5222,
+    "births2021": 7012,
+    "change_pct": -25.53,
+    "change_abs": -1790
+  },
+  {
+    "name": "Тернопільський",
+    "births2025": 3048,
+    "births2021": 4105,
+    "change_pct": -25.75,
+    "change_abs": -1057
+  },
+  {
+    "name": "Кропивницький",
+    "births2025": 2160,
+    "births2021": 2913,
+    "change_pct": -25.85,
+    "change_abs": -753
+  },
+  {
+    "name": "Хмельницький",
+    "births2025": 3681,
+    "births2021": 4970,
+    "change_pct": -25.94,
+    "change_abs": -1289
+  },
+  {
+    "name": "Олександрійський",
+    "births2025": 804,
+    "births2021": 1091,
+    "change_pct": -26.31,
+    "change_abs": -287
+  },
+  {
+    "name": "Сарненський",
+    "births2025": 2110,
+    "births2021": 2867,
+    "change_pct": -26.4,
+    "change_abs": -757
+  },
+  {
+    "name": "Дубенський",
+    "births2025": 979,
+    "births2021": 1335,
+    "change_pct": -26.67,
+    "change_abs": -356
+  },
+  {
+    "name": "Золочівський",
+    "births2025": 929,
+    "births2021": 1268,
+    "change_pct": -26.74,
+    "change_abs": -339
+  },
+  {
+    "name": "Полтавський",
+    "births2025": 2629,
+    "births2021": 3637,
+    "change_pct": -27.72,
+    "change_abs": -1008
+  },
+  {
+    "name": "Голованівський",
+    "births2025": 500,
+    "births2021": 695,
+    "change_pct": -28.06,
+    "change_abs": -195
+  },
+  {
+    "name": "Одеський",
+    "births2025": 7605,
+    "births2021": 10691,
+    "change_pct": -28.87,
+    "change_abs": -3086
+  },
+  {
+    "name": "Яворівський",
+    "births2025": 1121,
+    "births2021": 1586,
+    "change_pct": -29.32,
+    "change_abs": -465
+  },
+  {
+    "name": "Кам'янець-Подільський",
+    "births2025": 1223,
+    "births2021": 1735,
+    "change_pct": -29.51,
+    "change_abs": -512
+  },
+  {
+    "name": "Уманський",
+    "births2025": 1111,
+    "births2021": 1576,
+    "change_pct": -29.51,
+    "change_abs": -465
+  },
+  {
+    "name": "Гайсинський",
+    "births2025": 984,
+    "births2021": 1398,
+    "change_pct": -29.61,
+    "change_abs": -414
+  },
+  {
+    "name": "Стрийський",
+    "births2025": 1684,
+    "births2021": 2417,
+    "change_pct": -30.33,
+    "change_abs": -733
+  },
+  {
+    "name": "Кам'янський",
+    "births2025": 1773,
+    "births2021": 2549,
+    "change_pct": -30.44,
+    "change_abs": -776
+  },
+  {
+    "name": "Шептицький",
+    "births2025": 1110,
+    "births2021": 1606,
+    "change_pct": -30.88,
+    "change_abs": -496
+  },
+  {
+    "name": "Хмільницький",
+    "births2025": 882,
+    "births2021": 1279,
+    "change_pct": -31.04,
+    "change_abs": -397
+  },
+  {
+    "name": "Чернівецький",
+    "births2025": 3973,
+    "births2021": 5817,
+    "change_pct": -31.7,
+    "change_abs": -1844
+  },
+  {
+    "name": "Чернігівський",
+    "births2025": 1746,
+    "births2021": 2557,
+    "change_pct": -31.72,
+    "change_abs": -811
+  },
+  {
+    "name": "Володимирський",
+    "births2025": 844,
+    "births2021": 1237,
+    "change_pct": -31.77,
+    "change_abs": -393
+  },
+  {
+    "name": "Камінь-Каширський",
+    "births2025": 1051,
+    "births2021": 1542,
+    "change_pct": -31.84,
+    "change_abs": -491
+  },
+  {
+    "name": "Кременчуцький",
+    "births2025": 1593,
+    "births2021": 2337,
+    "change_pct": -31.84,
+    "change_abs": -744
+  },
+  {
+    "name": "Коростенський",
+    "births2025": 1176,
+    "births2021": 1727,
+    "change_pct": -31.91,
+    "change_abs": -551
+  },
+  {
+    "name": "Могилів-Подільський",
+    "births2025": 564,
+    "births2021": 833,
+    "change_pct": -32.29,
+    "change_abs": -269
+  },
+  {
+    "name": "Первомайський",
+    "births2025": 689,
+    "births2021": 1030,
+    "change_pct": -33.11,
+    "change_abs": -341
+  },
+  {
+    "name": "Миргородський",
+    "births2025": 717,
+    "births2021": 1080,
+    "change_pct": -33.61,
+    "change_abs": -363
+  },
+  {
+    "name": "Шепетівський",
+    "births2025": 1307,
+    "births2021": 1976,
+    "change_pct": -33.86,
+    "change_abs": -669
+  },
+  {
+    "name": "Коломийський",
+    "births2025": 1309,
+    "births2021": 1992,
+    "change_pct": -34.29,
+    "change_abs": -683
+  },
+  {
+    "name": "Звягельський",
+    "births2025": 805,
+    "births2021": 1228,
+    "change_pct": -34.45,
+    "change_abs": -423
+  },
+  {
+    "name": "Мукачівський",
+    "births2025": 1539,
+    "births2021": 2356,
+    "change_pct": -34.68,
+    "change_abs": -817
+  },
+  {
+    "name": "Вознесенський",
+    "births2025": 790,
+    "births2021": 1210,
+    "change_pct": -34.71,
+    "change_abs": -420
+  },
+  {
+    "name": "Конотопський",
+    "births2025": 568,
+    "births2021": 872,
+    "change_pct": -34.86,
+    "change_abs": -304
+  },
+  {
+    "name": "Криворізький",
+    "births2025": 3106,
+    "births2021": 4775,
+    "change_pct": -34.95,
+    "change_abs": -1669
+  },
+  {
+    "name": "Бердичівський",
+    "births2025": 723,
+    "births2021": 1116,
+    "change_pct": -35.22,
+    "change_abs": -393
+  },
+  {
+    "name": "Прилуцький",
+    "births2025": 502,
+    "births2021": 775,
+    "change_pct": -35.23,
+    "change_abs": -273
+  },
+  {
+    "name": "Роменський",
+    "births2025": 383,
+    "births2021": 596,
+    "change_pct": -35.74,
+    "change_abs": -213
+  },
+  {
+    "name": "Ніжинський",
+    "births2025": 778,
+    "births2021": 1224,
+    "change_pct": -36.44,
+    "change_abs": -446
+  },
+  {
+    "name": "Павлоградський",
+    "births2025": 725,
+    "births2021": 1155,
+    "change_pct": -37.23,
+    "change_abs": -430
+  },
+  {
+    "name": "Вижницький",
+    "births2025": 594,
+    "births2021": 948,
+    "change_pct": -37.34,
+    "change_abs": -354
+  },
+  {
+    "name": "Новоукраїнський",
+    "births2025": 521,
+    "births2021": 834,
+    "change_pct": -37.53,
+    "change_abs": -313
+  },
+  {
+    "name": "Запорізький",
+    "births2025": 2823,
+    "births2021": 4523,
+    "change_pct": -37.59,
+    "change_abs": -1700
+  },
+  {
+    "name": "Косівський",
+    "births2025": 421,
+    "births2021": 675,
+    "change_pct": -37.63,
+    "change_abs": -254
+  },
+  {
+    "name": "Надвірнянський",
+    "births2025": 769,
+    "births2021": 1234,
+    "change_pct": -37.68,
+    "change_abs": -465
+  },
+  {
+    "name": "Миколаївський",
+    "births2025": 2384,
+    "births2021": 3834,
+    "change_pct": -37.82,
+    "change_abs": -1450
+  },
+  {
+    "name": "Калуський",
+    "births2025": 1313,
+    "births2021": 2124,
+    "change_pct": -38.18,
+    "change_abs": -811
+  },
+  {
+    "name": "Берестинський",
+    "births2025": 413,
+    "births2021": 670,
+    "change_pct": -38.36,
+    "change_abs": -257
+  },
+  {
+    "name": "Лубенський",
+    "births2025": 621,
+    "births2021": 1009,
+    "change_pct": -38.45,
+    "change_abs": -388
+  },
+  {
+    "name": "Тульчинський",
+    "births2025": 567,
+    "births2021": 925,
+    "change_pct": -38.7,
+    "change_abs": -358
+  },
+  {
+    "name": "Золотоніський",
+    "births2025": 459,
+    "births2021": 760,
+    "change_pct": -39.61,
+    "change_abs": -301
+  },
+  {
+    "name": "Самбірський",
+    "births2025": 1049,
+    "births2021": 1739,
+    "change_pct": -39.68,
+    "change_abs": -690
+  },
+  {
+    "name": "Хустський",
+    "births2025": 1611,
+    "births2021": 2695,
+    "change_pct": -40.22,
+    "change_abs": -1084
+  },
+  {
+    "name": "Жмеринський",
+    "births2025": 721,
+    "births2021": 1219,
+    "change_pct": -40.85,
+    "change_abs": -498
+  },
+  {
+    "name": "Ізмаїльський",
+    "births2025": 977,
+    "births2021": 1666,
+    "change_pct": -41.36,
+    "change_abs": -689
+  },
+  {
+    "name": "Чортківський",
+    "births2025": 1206,
+    "births2021": 2058,
+    "change_pct": -41.4,
+    "change_abs": -852
+  },
+  {
+    "name": "Дністровський",
+    "births2025": 626,
+    "births2021": 1071,
+    "change_pct": -41.55,
+    "change_abs": -445
+  },
+  {
+    "name": "Берегівський",
+    "births2025": 1332,
+    "births2021": 2280,
+    "change_pct": -41.58,
+    "change_abs": -948
+  },
+  {
+    "name": "КИЇВ",
+    "births2025": 17182,
+    "births2021": 29611,
+    "change_pct": -41.97,
+    "change_abs": -12429
+  },
+  {
+    "name": "Кременецький",
+    "births2025": 645,
+    "births2021": 1112,
+    "change_pct": -42,
+    "change_abs": -467
+  },
+  {
+    "name": "Охтирський",
+    "births2025": 396,
+    "births2021": 685,
+    "change_pct": -42.19,
+    "change_abs": -289
+  },
+  {
+    "name": "Самарівський",
+    "births2025": 714,
+    "births2021": 1237,
+    "change_pct": -42.28,
+    "change_abs": -523
+  },
+  {
+    "name": "Лозівський",
+    "births2025": 473,
+    "births2021": 822,
+    "change_pct": -42.46,
+    "change_abs": -349
+  },
+  {
+    "name": "Тячівський",
+    "births2025": 1040,
+    "births2021": 1812,
+    "change_pct": -42.6,
+    "change_abs": -772
+  },
+  {
+    "name": "Сумський",
+    "births2025": 1454,
+    "births2021": 2561,
+    "change_pct": -43.23,
+    "change_abs": -1107
+  },
+  {
+    "name": "Рахівський",
+    "births2025": 558,
+    "births2021": 988,
+    "change_pct": -43.52,
+    "change_abs": -430
+  },
+  {
+    "name": "Звенигородський",
+    "births2025": 618,
+    "births2021": 1102,
+    "change_pct": -43.92,
+    "change_abs": -484
+  },
+  {
+    "name": "Подільський",
+    "births2025": 1014,
+    "births2021": 1847,
+    "change_pct": -45.1,
+    "change_abs": -833
+  },
+  {
+    "name": "Білгород-Дністровський",
+    "births2025": 946,
+    "births2021": 1747,
+    "change_pct": -45.85,
+    "change_abs": -801
+  },
+  {
+    "name": "Корюківський",
+    "births2025": 266,
+    "births2021": 505,
+    "change_pct": -47.33,
+    "change_abs": -239
+  },
+  {
+    "name": "Баштанський",
+    "births2025": 502,
+    "births2021": 955,
+    "change_pct": -47.43,
+    "change_abs": -453
+  },
+  {
+    "name": "Синельниківський",
+    "births2025": 692,
+    "births2021": 1328,
+    "change_pct": -47.89,
+    "change_abs": -636
+  },
+  {
+    "name": "Шосткинський",
+    "births2025": 398,
+    "births2021": 770,
+    "change_pct": -48.31,
+    "change_abs": -372
+  },
+  {
+    "name": "Новгород-Сіверський",
+    "births2025": 134,
+    "births2021": 277,
+    "change_pct": -51.62,
+    "change_abs": -143
+  },
+  {
+    "name": "Харківський",
+    "births2025": 4932,
+    "births2021": 10268,
+    "change_pct": -51.97,
+    "change_abs": -5336
+  },
+  {
+    "name": "Роздільнянський",
+    "births2025": 467,
+    "births2021": 975,
+    "change_pct": -52.1,
+    "change_abs": -508
+  },
+  {
+    "name": "Богодухівський",
+    "births2025": 384,
+    "births2021": 827,
+    "change_pct": -53.57,
+    "change_abs": -443
+  },
+  {
+    "name": "Болградський",
+    "births2025": 517,
+    "births2021": 1233,
+    "change_pct": -58.07,
+    "change_abs": -716
+  },
+  {
+    "name": "Чугуївський",
+    "births2025": 456,
+    "births2021": 1182,
+    "change_pct": -61.42,
+    "change_abs": -726
+  },
+  {
+    "name": "Березівський",
+    "births2025": 430,
+    "births2021": 1121,
+    "change_pct": -61.64,
+    "change_abs": -691
+  },
+  {
+    "name": "Нікопольський",
+    "births2025": 522,
+    "births2021": 1452,
+    "change_pct": -64.05,
+    "change_abs": -930
+  },
+  {
+    "name": "Ізюмський",
+    "births2025": 324,
+    "births2021": 992,
+    "change_pct": -67.34,
+    "change_abs": -668
+  },
+  {
+    "name": "Краматорський",
+    "births2025": 602,
+    "births2021": 2617,
+    "change_pct": -77,
+    "change_abs": -2015
+  },
+  {
+    "name": "Бериславський",
+    "births2025": 133,
+    "births2021": 633,
+    "change_pct": -78.99,
+    "change_abs": -500
+  },
+  {
+    "name": "Херсонський",
+    "births2025": 233,
+    "births2021": 3281,
+    "change_pct": -92.9,
+    "change_abs": -3048
+  },
+  {
+    "name": "Куп'янський",
+    "births2025": 37,
+    "births2021": 721,
+    "change_pct": -94.87,
+    "change_abs": -684
+  },
+  {
+    "name": "Бахмутський район",
+    "births2025": 0,
+    "births2021": 946,
+    "change_pct": -100,
+    "change_abs": -946
+  },
+  {
+    "name": "Волноваський район",
+    "births2025": 0,
+    "births2021": 764,
+    "change_pct": -100,
+    "change_abs": -764
+  },
+  {
+    "name": "Горлівський район",
+    "births2025": 0,
+    "births2021": 306,
+    "change_pct": -100,
+    "change_abs": -306
+  },
+  {
+    "name": "Донецький район",
+    "births2025": 0,
+    "births2021": 1174,
+    "change_pct": -100,
+    "change_abs": -1174
+  },
+  {
+    "name": "Кальміуський район",
+    "births2025": 0,
+    "births2021": 110,
+    "change_pct": -100,
+    "change_abs": -110
+  },
+  {
+    "name": "Маріупольський район",
+    "births2025": 0,
+    "births2021": 2425,
+    "change_pct": -100,
+    "change_abs": -2425
+  },
+  {
+    "name": "Покровський район",
+    "births2025": 0,
+    "births2021": 1792,
+    "change_pct": -100,
+    "change_abs": -1792
+  },
+  {
+    "name": "Бердянський район",
+    "births2025": 0,
+    "births2021": 976,
+    "change_pct": -100,
+    "change_abs": -976
+  },
+  {
+    "name": "Василівський район",
+    "births2025": 0,
+    "births2021": 1108,
+    "change_pct": -100,
+    "change_abs": -1108
+  },
+  {
+    "name": "Мелітопольський район",
+    "births2025": 0,
+    "births2021": 1975,
+    "change_pct": -100,
+    "change_abs": -1975
+  },
+  {
+    "name": "Пологівський район",
+    "births2025": 0,
+    "births2021": 989,
+    "change_pct": -100,
+    "change_abs": -989
+  },
+  {
+    "name": "Алчевський район",
+    "births2025": 0,
+    "births2021": 133,
+    "change_pct": -100,
+    "change_abs": -133
+  },
+  {
+    "name": "Довжанський район",
+    "births2025": 0,
+    "births2021": 112,
+    "change_pct": -100,
+    "change_abs": -112
+  },
+  {
+    "name": "Луганський район",
+    "births2025": 0,
+    "births2021": 381,
+    "change_pct": -100,
+    "change_abs": -381
+  },
+  {
+    "name": "Ровеньківський район",
+    "births2025": 0,
+    "births2021": 115,
+    "change_pct": -100,
+    "change_abs": -115
+  },
+  {
+    "name": "Сватівський район",
+    "births2025": 0,
+    "births2021": 303,
+    "change_pct": -100,
+    "change_abs": -303
+  },
+  {
+    "name": "Сєвєродонецький район",
+    "births2025": 0,
+    "births2021": 1410,
+    "change_pct": -100,
+    "change_abs": -1410
+  },
+  {
+    "name": "Старобільський район",
+    "births2025": 0,
+    "births2021": 648,
+    "change_pct": -100,
+    "change_abs": -648
+  },
+  {
+    "name": "Щастинський район",
+    "births2025": 0,
+    "births2021": 254,
+    "change_pct": -100,
+    "change_abs": -254
+  },
+  {
+    "name": "Генічеський район",
+    "births2025": 0,
+    "births2021": 922,
+    "change_pct": -100,
+    "change_abs": -922
+  },
+  {
+    "name": "Каховський район",
+    "births2025": 0,
+    "births2021": 1378,
+    "change_pct": -100,
+    "change_abs": -1378
+  },
+  {
+    "name": "Скадовський район",
+    "births2025": 0,
+    "births2021": 899,
+    "change_pct": -100,
+    "change_abs": -899
+  }
+]
